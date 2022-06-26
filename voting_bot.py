@@ -8,7 +8,7 @@ for i in range(500):
     try:
         driver = webdriver.Chrome(ChromeDriverManager().install())
         driver.get(URL)
-        driver.find_element_by_name('Email').send_keys('fedeelozanomalaga+' + str(i) + '@gmail.com\n')
+        driver.find_element_by_name('Email').send_keys('example_email+' + str(i) + '@gmail.com\n')
         time.sleep(3)
         driver.quit()
         print('Voted, i = ' + str(i))
